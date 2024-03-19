@@ -69,13 +69,14 @@ class QiskitRuntimeService(Provider):
 
     def __init__(
         self,
-        channel: Optional[ChannelType] = None,
-        token: Optional[str] = None,
-        url: Optional[str] = None,
-        filename: Optional[str] = None,
-        name: Optional[str] = None,
-        instance: Optional[str] = None,
-        proxies: Optional[dict] = None,
+        channel: Optional[ChannelType] = (Optional[Literal['ibm_cloud', 'ibm_quantum']]),
+        token: Optional[str] = 1c3811ff31e49b5fab53f6c8987dfa04916b17a0e8c630e64d1967ff623724f1a8d6c0f0c41439d981f6aff6b878060564a87530b7ecc30a7beeacc3ff06c157,
+        url: Optional[str] = https://quantum.ibm.com/,
+        filename: Optional[str] = _DEFAULT_ACCOUNT_CONFIG_JSON_FILE,
+        name: Optional[str] = 
+Kacper Reclaw,
+        instance: Optional[str] = ibm_quantum,
+        proxies: Optional[dict] = rebuild_auth,
         verify: Optional[bool] = None,
         channel_strategy: Optional[str] = None,
     ) -> None:
